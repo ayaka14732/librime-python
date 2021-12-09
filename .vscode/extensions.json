@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools",
+        "xaver.clang-format",
+        "streetsidesoftware.code-spell-checker",
+        "esbenp.prettier-vscode"
+    ]
+}

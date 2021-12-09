@@ -1,0 +1,11 @@
+---
+BasedOnStyle: Chromium
+IndentWidth: 4
+ColumnLimit: 0
+Cpp11BracedListStyle: 'false'
+SortIncludes: false
+SpaceAfterCStyleCast: 'true'
+SpaceBeforeCpp11BracedList: 'true'
+SpacesBeforeTrailingComments: '2'
+SpacesInParentheses: 'true'
+...

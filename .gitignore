@@ -1,0 +1,13 @@
+*.dict.yaml
+dist
+*.egg-info
+.mypy_cache
+.pytest_cache
+__pycache__
+
+/cpp/cpp
+/python/README.md
+/archlinux/*.gz
+/archlinux/*.zst
+/archlinux/src
+/archlinux/pkg
