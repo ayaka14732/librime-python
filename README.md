@@ -137,7 +137,29 @@ ImportError: /usr/lib/python3.9/lib-dynload/math.cpython-39-x86_64-linux-gnu.so:
 
 ### 3.2. Windows
 
-**FIXME**：在 Windows 上遇到各种编译错误而失败，下一个版本修复。
+首先要保证Python运行平台与librime(thirdparty、boost、librime主程序)一致，如librime 以Win32编译时，Python须为32bit，且PyBind安装也应为32bit.
+
+然后进行Python部份的安装
+
+```sh
+cd python
+pip install .
+pip install pybind
+```
+
+在把该项目置于librime/plugins目录下后，在该项目录下需有CMakeLists.txt 因此先用CMD建立链接
+
+```sh
+mklink CMakeLists.txt cpp\CMakeLists.txt
+mklink /D src cpp\src
+```
+
+在 librime 项目下使用build.bat编译即可
+
+```sh
+build.bat # 32位
+build.bat x64 #64位
+```
 
 ## 四、用户 Q&A
 
